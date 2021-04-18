@@ -1,0 +1,14 @@
+.colored-header {
+    background-color: yellow;
+    margin-top: 0;
+}
+
+div{
+    border: 2px black solid;
+    border-radius: 5px;
+    width: 400px;
+}
+
+:host {
+    margin: 5px;
+}

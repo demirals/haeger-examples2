@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillFactory: WebComponents</title>
+
+    <script type="module" src="my-card.js"></script>
+    <script type="module" src="my-card2.js"></script>
+</head>
+<body>
+    <style>
+        .colored-header {
+            background-color: aquamarine;
+            margin: 0;
+        }
+        .card {
+            border-style: solid;
+            border-radius: 5px;
+            border-width: 1px;
+            width: 300px;
+        }
+        
+    </style>
+    <h2>Eine kleine Überschrift</h2>
+    <div style="display: flex;">
+        <div class="card">
+            <h2 class="colored-header">Eine Box mit Überschrift</h2>
+            <p>Ein Paragraph mit etwas Inhalt</p>
+        </div>
+        <my-card>
+            <p>Ein bisschen einfacher Text.</p>
+        </my-card>
+        <my-card header="Some Headline">
+            <div>
+                <ol>
+                    <li>Eine Liste</li>
+                    <li>Mit mehreren Einträgen</li>
+                </ol>
+                <button>Mit Button der nix tut</button>
+            </div>
+        </my-card>
+    </div>
+    <div style="display: flex;">
+        <my-card2 header="Nicht so dumm">
+            <p>Text....</p>
+        </my-card2>
+    </div>
+</body>
+</html>
