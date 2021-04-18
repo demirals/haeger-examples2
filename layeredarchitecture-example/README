@@ -1,0 +1,18 @@
+# layerdarchitecture-example
+Beispiel-Applikation ohne wirliche Funktionalitaet, um die sog. Schichtenarchitektur in Form eines Beispiels
+darzulegen.
+
+Es handelt sich um ein Struktur-Architekturmuster.
+Dieses Architekturmuster schneidet eine Architektur eines Systems in Schichten, wobei jede Schicht auf die Dienste der
+darunterliegenden Schicht zugreifen kann (horizontale Schichtung eines Systems). Diese Architektur setzt voraus, dass sich
+ein sinnvoller Ablauf ergibt, wenn ein Client die oberste Schicht des Systems als Server ruft (z.B. Aufruf von REST-Endpoints),
+diese in der Rolle eines Clients ieder die nächste tiefere Schicht als Server usw. bis zur letzten (untersten) Schicht.
+
+Merke:
+Eine tiefere Schicht kann die Dienste einer höheren Schicht nicht aufrufen. Eine höhere Schicht kann jedoch auf die Dienste
+der nächst tieferen Schicht zugreifen.
+
+
+Hinweis: Dieses Beispiel nutzt für den "Datenbankzugriff" das sog. Repository-Pattern. Alternativ ist hierzu auch das
+DAO-Pattern verwendbar. Die Verwendung des Repository-Pattern ergibt sich aus den in vielen Projekten verwendeten
+Spring JPA-Repositories.

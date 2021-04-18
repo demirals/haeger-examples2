@@ -12,6 +12,14 @@ public abstract class Person {
         this.nachname = nachname;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getVorname() {
         return vorname;
     }
